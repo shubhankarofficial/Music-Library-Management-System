@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Song_add</class>
+ <widget class="QDialog" name="Song_add">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>440</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Add Song</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>222</width>
+     <height>315</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label1_SongID">
+      <property name="text">
+       <string>Song ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit1_SongID">
+      <property name="placeholderText">
+       <string>1234</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label2_Title">
+      <property name="text">
+       <string>Title</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit2_Title">
+      <property name="placeholderText">
+       <string>XYZ</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label3_ArtistID">
+      <property name="text">
+       <string>Artist ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="comboBox1_select_Artist"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label4_AlbumID">
+      <property name="text">
+       <string>Album ID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboBox2_select_Album"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label5_TrackNo">
+      <property name="text">
+       <string>Track No.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEdit3_TrackNo">
+      <property name="placeholderText">
+       <string>01</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label6_Duration">
+      <property name="text">
+       <string>Duration</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="lineEdit4_Duration">
+      <property name="placeholderText">
+       <string>In Seconds</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label7_Format">
+      <property name="text">
+       <string>Format</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="lineEdit5_Format">
+      <property name="placeholderText">
+       <string>mp3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label8_Genre">
+      <property name="text">
+       <string>Genre</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="lineEdit6_Genre">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Album Genre</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="button3_Submit">
+      <property name="text">
+       <string>&amp;Submit</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="button1_Add_Artist">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>100</y>
+     <width>148</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add &amp;Artist</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button2_Add_Album">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>130</y>
+     <width>148</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add A&amp;lbum</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

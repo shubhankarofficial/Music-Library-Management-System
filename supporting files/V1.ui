@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Music DB GUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>1831</width>
+      <height>821</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>1831</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="button1_show_Songs">
+       <property name="toolTip">
+        <string>Show Songs</string>
+       </property>
+       <property name="text">
+        <string>&amp;Songs</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button2_show_Artists">
+       <property name="toolTip">
+        <string>Show Artists</string>
+       </property>
+       <property name="text">
+        <string>&amp;Artists</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button3_show_Albums">
+       <property name="toolTip">
+        <string>Show Albums</string>
+       </property>
+       <property name="text">
+        <string>A&amp;lbums</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button4_show_Genres">
+       <property name="toolTip">
+        <string>Show Genres</string>
+       </property>
+       <property name="text">
+        <string>&amp;Genres</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button5_show_Playlists">
+       <property name="toolTip">
+        <string>Show Playlists</string>
+       </property>
+       <property name="text">
+        <string>&amp;Playlists</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>361</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Songs in </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_select_Playlist">
+       <item>
+        <property name="text">
+         <string>-- Select Playlist --</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_go_playlist">
+       <property name="toolTip">
+        <string>Show Playlist Contents</string>
+       </property>
+       <property name="text">
+        <string>G&amp;o</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>121</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show data from</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuAdd">
+     <property name="title">
+      <string>Add</string>
+     </property>
+     <addaction name="actionAddSong"/>
+     <addaction name="actionAddArtist"/>
+     <addaction name="actionAddAlbum"/>
+    </widget>
+    <addaction name="menuAdd"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="statusTip">
+    <string>Quit the program.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAddSong">
+   <property name="text">
+    <string>Song</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new Song to the Database</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionAddArtist">
+   <property name="text">
+    <string>Artist</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new Artist to the Database</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+A</string>
+   </property>
+  </action>
+  <action name="actionAddAlbum">
+   <property name="text">
+    <string>Album</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new Album to the Database</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+R</string>
+   </property>
+  </action>
+  <action name="actionAddPlaylist">
+   <property name="text">
+    <string>Playlist</string>
+   </property>
+   <property name="statusTip">
+    <string>Add a new Playlist to the Database</string>
+   </property>
+  </action>
+  <action name="actionAddSong_To_Playlist">
+   <property name="text">
+    <string>Song To Playlist</string>
+   </property>
+   <property name="statusTip">
+    <string>Manage Playlists</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
